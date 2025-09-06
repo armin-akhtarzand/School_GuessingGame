@@ -1,4 +1,5 @@
 # GuessGame – Versions
+**This project consists of several classes, make sure to compile them all before running.**
 
 This repository contains different versions of the "GuessGame" during my first 2 weeks of learning Java (In school)
 
