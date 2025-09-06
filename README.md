@@ -1,17 +1,36 @@
-Guessing game with 3 levels of increasing difficulty:
-- Level 1: Guess a number between 1-50 (8 tries)
-- Level 2: Guess a number between 1-100 (7 tries)
-- Level 3: Guess a number between 1-1000 (10 tries)
-- The game ends automatically after a win, or if you run out of tries.
-- You can end the game by typing "q"
--------------------------------------
-What i learned:
-- Loops for managing attempts and levels
-- Conidionals (if/else) for input validation & feedback.
-- Using Scanner to handle user input, trimming and error handling.
-- Controlling program flow with break and flags.
---------------------------------------
-Improvements for the future:
-- Refactor logic into methods (e.g. playLevel((min, max, tries))
-- Add a scoreboard or highscore list
-- Create a GUI version
+# GuessGame – Versions
+
+This repository contains different versions of the "GuessGame" during my first 2 weeks of learning Java (In school)
+
+---
+#Versions**
+
+#v1 — Basic, single-file version
+- Simple guessing game: the player guesses until the correct number is found.
+- Logic lives inside `main`.
+- Focus of learning: Scanner, if/else, for-loops.
+
+**What it taught me**
+- Reading user input
+- Validating ranges
+- Basic game loop reasoning
+
+---
+
+**v2** — Multi-level & modular version (today’s work)
+- Introduces **four levels** with increasing ranges and attempts:
+  - Level 1: `1–50`, 8 attempts  
+  - Level 2: `1–100`, 7 attempts  
+  - Level 3: `1–1000`, 10 attempts  
+  - Level 4: `1–1,000,000`, 20 attempts
+- Clean separation of concerns:
+  - `Levels.playLevel(level, min, max, attempts, sc)` returns a `Result` (`WIN`, `LOSE`, `QUIT`)
+  - `AskPlayAgain.playAgain()` handles restart/exit prompts
+  - Enum `Result.Results` centralizes game outcomes
+- Game loop: If you **lose or quit** at any level, you’re asked to **play again**. If yes, the game restarts from **level 1**.  
+  Winning all four levels prints a final **congratulations** and ends the game.
+
+**What it taught me**
+- **Methods** and modular design (splitting logic into focused units)
+- Returning **result codes** (enum) to control the flow cleanly
+- Designing a level progression and a restart loop
