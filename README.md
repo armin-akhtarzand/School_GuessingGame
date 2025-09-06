@@ -3,12 +3,19 @@
 This repository contains different versions of the "GuessGame" during my first 2 weeks of learning Java (In school)
 
 ---
-#Versions**
+**Versions**
 
 #v1 — Basic, single-file version
-- Simple guessing game: the player guesses until the correct number is found.
-- Logic lives inside `main`.
-- Focus of learning: Scanner, if/else, for-loops.
+
+-Introduces **three levels* with increasing range and attempts:
+  - Level 1: `1–50`, 8 attempts  
+  - Level 2: `1–100`, 7 attempts  
+  - Level 3: `1–1000`, 10 attempts
+
+  **Structure**  
+ - Simple guessing game: the player guesses until the correct number is found.
+ - Logic lives inside `main`.
+ - Focus of learning: Scanner, if/else, for-loops.
 
 **What it taught me**
 - Reading user input
@@ -18,7 +25,7 @@ This repository contains different versions of the "GuessGame" during my first 2
 ---
 
 **v2** — Multi-level & modular version (today’s work)
-- Introduces **four levels** with increasing ranges and attempts:
+- Introduces **level 4**:
   - Level 1: `1–50`, 8 attempts  
   - Level 2: `1–100`, 7 attempts  
   - Level 3: `1–1000`, 10 attempts  
