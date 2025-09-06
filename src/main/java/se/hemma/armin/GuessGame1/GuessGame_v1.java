@@ -1,8 +1,8 @@
-package se.hemma.armin.checklist1;
+package se.hemma.armin.GuessGame1;
 
 import java.util.Scanner;
 
-public class GuessGame_Demo {
+public class GuessGame_v1 {
     public static void main(String[] args) {
 
         //Random generator for every level
